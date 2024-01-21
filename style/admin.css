@@ -1,0 +1,52 @@
+nav {
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+ul.niv1 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li.niv1 {
+    margin-right: 3rem;
+}
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul.niv2 {
+    display: none;
+    box-shadow: 0px 1px 2px #000;
+}
+
+nav > ul li:hover .niv2 {
+    display: block;
+}
+
+.niv1-spe > a::after {
+    content: " ▼";
+    font-size: 0.75rem;
+    margin-left: .4rem;
+}
+
+ul.niv2 {
+    list-style: none;
+    padding: .7rem 2rem 0 1rem;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: .4rem;
+}
+
+ul.niv2 li {
+    margin-bottom: .7rem;
+}

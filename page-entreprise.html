@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/page-entreprise.css">
+    <link rel="stylesheet" href="style/home.css">
+    <title>Amigo - Mon compte</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="home.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="presentation.html">Présentation</a></li>
+            <li id="link1" class="link"><a href="trombi.html">Trombinoscope</a></li>
+            <li id="link2" class="link"><a href="partenaire.html">Nos partenaires</a></li>
+            <li id="link3" class="link"><a href="offre.html">Offres</a></li>
+        </ul>
+
+        <button class="btn"><a href="connexion.html">S'identifier</a></button>
+        
+    </nav>
+
+    <main class="page-entreprise">
+        <form class="form-modif-entreprise" method="post">
+            <legend>Mes informations</legend>
+            <p>
+                <input type="text" name="nom" id="nom">
+                <label for="nom">Nom du représentant :</label>
+            </p>
+            <p>
+                <input type="text" name="prenom" id="prenom">
+                <label for="prenom">Prenom du représentant :</label>
+            </p>
+            <p>
+                <input type="text" name="mail" id="mail">
+                <label for="mail">Adresse mail du représentant :</label>
+            </p>
+            <input type="submit" value="Modifier les informations">
+        </form>
+
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <form method="post" class="form-demande-offre">
+            <legend>Proposer une offre</legend>
+            <p>
+                <input type="text" name="titreAnnonce" id="titreAnnonce">
+                <label for="titreAnnonce">Titre de l'annonce :</label>
+            </p>
+            <p>
+                <select name="typeAnnonce" id="typeAnnonce">
+                    <option value="stage" selected>Stage</option>
+                    <option value="alternance">Alternance</option>
+                    <option value="cdi">CDI</option>
+                </select>
+                <label for="typeAnnonce">Type de l'offre :</label>
+            </p>
+            <p>
+                <textarea name="contenuOffre" id="" cols="150" rows="20"></textarea>
+                <label for="contenuOffre">Contenu de l'offre :</label>
+            </p>
+            
+            <p>
+                <input type="submit" value="Soumettre l'offre">
+            </p>
+            <p id="avertissement">
+                (*) Lorsque vous aurez soumis votre offre, elle ne sera pas publié dans l'immédiat. Un modérateur viendra vérifié que votre
+                annonce est sérieuse. 
+            </p>
+        </form>
+    </main>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            
+            
+            <div class="socials">
+                <a href="#"><i class="ri-LinkedIn-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-discord-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>A propos de nous</h4>
+            <a href="#">Présentation</a>
+            <a href="#">Trombinoscope</a>
+        </div>
+        <div class="column">
+            <h4>Nos partenaires</h4>
+            <a href="#">Partenariats annuelles</a>
+            <a href="#">Entreprises partenaires</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Nous contacter</a>
+            <a href="#">Conditions générales</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2023 Amigo. Tout les droits sont réservés.
+    </div>
+
+</body>
+</html>
